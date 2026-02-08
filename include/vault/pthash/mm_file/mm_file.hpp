@@ -1,11 +1,14 @@
 #pragma once
 
-#include <sys/mman.h>
-#include <sys/stat.h>
-#include <type_traits>
 #include <fcntl.h>
 #include <unistd.h>  // close(fd)
+
+#include <sys/mman.h>
+#include <sys/stat.h>
+
 #include <string>
+#include <cstdint>
+#include <stdexcept>
 
 namespace mm {
 
